@@ -1,0 +1,24 @@
+root: /home/yangyu/tagging/
+roberta_model_path: pseudo_labeling/roberta_model/chinese-roberta-wwm-ext-large
+
+label_file_name: dataset/tagged/label.txt
+unlabel_file_name: dataset/source/unlabeled.txt
+
+max_iterations: 10
+
+use_cuda: True
+
+train_rate: 0.8
+
+pseudo_file_path: /pseudo_labeling/data
+pseudo_file_name: "pseudo_file_"
+
+categories:
+  - 正样本
+  - 负样本
+
+EPOCH: 2
+batch_size: 1024
+LR: 0.000002
+
+threshold: 0.8
